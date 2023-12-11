@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px){
+   
+   /*** Header ***/
+    #header .nav{
+        display: none;
+    }
+    #header .icon{
+        display: block;
+    }
+    
+    /*** Section demo-app ***/
+
+    #demo-app .col.first .col{
+        width: 100%;
+    }
+
+
+    /*** Section planning ***/
+    #planning .row >.col {
+        width: 100%;
+    }
+
+
+
+    /*** Section benefits ***/
+
+    #benefits .col{
+        width: 50%;
+    }
+
+}

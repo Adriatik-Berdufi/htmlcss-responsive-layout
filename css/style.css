@@ -93,14 +93,16 @@ section{
  
 }
 #header .logo,
-#header .nav-bar{
+#header .nav,
+#header .icon{
   padding: 0 25px;
   height: var(--header-height);
   border: 1px solid black;
   line-height: var(--header-height);
- 
 }
-
+#header .icon{
+  display:none ;
+}
 
 
 
@@ -117,6 +119,10 @@ section{
 
 #demo-app .col{
   width: calc(100% /3);
+  
+}
+#demo-app .col .card{
+  height: 100%;
 }
 
 #demo-app .col.first .col{
