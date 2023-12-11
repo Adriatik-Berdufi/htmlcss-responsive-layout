@@ -2,6 +2,7 @@
   --header-height: 90px;
   --footer-height: 90px;
   
+  
 }
 
 /** Reset **/
@@ -37,12 +38,16 @@ li {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  /*debug*/
+  border: 1px dashed red;
 }
 .row{
   margin-left: -15px;
   margin-right: -15px;
   display: flex;
   flex-wrap: wrap;
+ 
+  
 }
 .col{
   padding: 15px;
@@ -58,10 +63,14 @@ li {
 .dsp-flex{
   display: flex;
 }
-.brd{
-  border: 2px dashed black;
-}
+.card{
+  
+  width: 100%;
+  /*debug*/
+  min-height: 300px;
+  border: 1px dashed black;
 
+}
 
 
 /** Debug **/
@@ -71,18 +80,57 @@ li {
 
 
 /** HEADER **/
-.header {
+#header{
   min-height: var(--header-height);
   background-color: rgb(251, 133, 91);
 }
+#header .container{
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+#header .logo,
+#header .nav-bar{
+  padding: 0 25px;
+  height: var(--header-height);
+  border: 1px solid black;
+  line-height: var(--header-height);
+ 
+}
+
 
 
 
 /** MAIN **/
-main{
+#main{
   min-height: calc(100vh - var(--header-height) - var(--header-height));
   background-color: #888;
+  padding: 0 var(--padding-body)
 }
+
+/*** Section demo-app ***/
+#demo-app .col.first{
+  width: calc(100% / 3*2 );
+}
+
+#demo-app .col{
+  width: calc(100% /3);
+}
+
+#demo-app .col.first .col{
+  width: 50%;
+  
+  /*debug*/
+  border: 1px solid red;
+
+}
+
+
+
+
+
+
+
 
 
 
