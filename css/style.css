@@ -59,7 +59,6 @@ li {
 
 /** Utils **/
 
-
 .dsp-flex{
   display: flex;
 }
@@ -74,7 +73,11 @@ li {
 
 
 /** Debug **/
+section{
+  padding:50px 0;
+  min-height: calc(100vh - var(--header-height))
 
+}
 
 
 
@@ -102,13 +105,12 @@ li {
 
 
 /** MAIN **/
-#main{
-  min-height: calc(100vh - var(--header-height) - var(--header-height));
-  background-color: #888;
-  padding: 0 var(--padding-body)
-}
+
 
 /*** Section demo-app ***/
+#demo-app{
+  background-color: rgb(153, 137, 137);
+}
 #demo-app .col.first{
   width: calc(100% / 3*2 );
 }
@@ -124,6 +126,30 @@ li {
   border: 1px solid red;
 
 }
+
+
+/*** Section planning ***/
+#planning .row >.col{
+  width: 50%;
+
+}
+#planning .container > .row {
+  align-items: flex-end;
+}
+#planning .row.dsp-flex{
+  flex-direction: column;
+  
+}
+#planning .row.dsp-flex .col{
+  width: 100%;
+  
+}
+
+
+
+
+
+
 
 
 
