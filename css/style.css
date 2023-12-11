@@ -146,14 +146,41 @@ section{
 }
 
 
+/*** Section testimonials ***/
+#testimonials{
+  background-color: rgb(161, 190, 190);
+}
+#testimonials .row{
+  flex-direction: column;
+}
 
 
+/*** Section benefits ***/
 
+#benefits .col{
+  width: calc(100% /3);
+  /*debug*/
+  min-height: 300px;
+  border: 1px solid black;
+}
+#benefits .col .container{
+  border: 1px dashed black;
+  height: 100%;
 
+}
 
+/*** Section about-us ***/
 
+#about-us{
+  background-color: rgb(170, 170, 215);
+}
 
-
+#about-us .col-left{
+  width:60%;  
+}
+#about-us .col-right{
+  width:40%;  
+}
 
 
 
