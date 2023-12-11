@@ -1,5 +1,52 @@
 @media screen and (max-width: 576px){
 
 
-    
+    /*** Section demo-app ***/
+    #demo-app .col.first{
+        width: 100%;
+    }
+    #demo-app .col{
+        width: 100%;
+    }
+
+
+
+    /*** Section testimonials ***/
+    .testimonials-card{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .testimonials-foto{
+        width: 100%;
+        height: 100px;
+        
+    }
+    .testimonials-description{
+        width: 100%;
+        
+      }
+
+
+    /*** Section benefits ***/
+
+    #benefits .col{
+        width: 100%;
+    }
+
+
+
+    /*** Section about-us ***/
+
+    #about-us .col-left{
+        width: 100%;
+    }
+    #about-us .col-right {
+        width: 100%;
+    }
+
+
+
+
+
 }

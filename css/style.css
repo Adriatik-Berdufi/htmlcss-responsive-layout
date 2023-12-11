@@ -159,6 +159,22 @@ section{
 #testimonials .row{
   flex-direction: column;
 }
+.testimonials-card{
+  display: flex;
+}
+.testimonials-foto{
+  width: 30%;
+  border: 1px dashed red;
+}
+.testimonials-description{
+  width: 70%;
+  border: 1px dashed red;
+}
+
+
+
+
+
 
 
 /*** Section benefits ***/
