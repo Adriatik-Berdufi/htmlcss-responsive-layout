@@ -1,6 +1,6 @@
 :root {
   --header-height: 90px;
-  --footer-height: 90px;
+  --footer-height: 220px;
   
   
 }
@@ -188,7 +188,10 @@ section{
 
 
 /** FOOTER **/
-.footer {
+#footer {
   min-height: var(--footer-height);
   background-color: goldenrod;
+}
+#footer .container{
+ height: var(--footer-height);
 }
