@@ -17,6 +17,7 @@ body {
 }
 img {
   width: 100%;
+
 }
 a {
   text-decoration: none;
@@ -32,6 +33,7 @@ li {
 
 
 /** Grid **/
+
 .container {
   max-width: 1080px;
   margin-left: auto;
@@ -46,8 +48,6 @@ li {
   margin-right: -15px;
   display: flex;
   flex-wrap: wrap;
- 
-  
 }
 .col{
   padding: 15px;
@@ -85,6 +85,7 @@ section{
 
 
 /** HEADER **/
+
 #header{
   min-height: var(--header-height);
   background-color: rgb(53, 132, 253);
@@ -122,17 +123,25 @@ section{
 
 
 
+
+
+
 /** MAIN **/
 
+
 /** main generic **/
+
 section:nth-last-of-type(odd){
   background-color: rgb(151, 146, 228);
 }
 
+
+
 /*** Section demo-app ***/
+
+
 #demo-app .col .card{
   background-color: rgb(181, 221, 255);
-
 }
 
 #demo-app .col.first{
@@ -141,7 +150,6 @@ section:nth-last-of-type(odd){
 
 #demo-app .col{
   width: calc(100% /3);
-  
 }
 #demo-app .col .card{
   height: 100%;
@@ -149,7 +157,9 @@ section:nth-last-of-type(odd){
 #demo-app .col.first .col{
   width: 50%;
 }
+
 /**Section demo-app card style **/
+
 #demo-app .col:last-child .card{
 display: flex;
 justify-content: center;
@@ -198,22 +208,69 @@ position: relative;
 
 
 
+
+
+
 /*** Section planning ***/
+
 #planning .row >.col{
   width: 50%;
-
 }
+
+
+/*** Section planning first col***/
+
+
 #planning .container > .row {
   align-items: flex-end;
 }
 #planning .row.dsp-flex{
-  flex-direction: column;
-  
+  flex-direction: column; 
+}
+#planning .row.dsp-flex img{
+  max-width: 450px;
 }
 #planning .row.dsp-flex .col{
   width: 100%;
-  
 }
+#planning .row.dsp-flex:last-child > .col{
+  color: white;
+}
+#planning .row.dsp-flex:last-child > .col .card > *{
+  margin-top: 50px;
+  color: white;
+}
+#planning .row.dsp-flex:last-child > .col h4{
+  font-size: 30px;
+}
+
+
+/*** Section planning second col ***/
+
+#planning > .container > .row > .col:last-child .card{
+  padding: 20px;
+  text-align: center;
+  line-height: 30px;
+  background-color: white;
+}
+#planning > .container > .row > .col:last-child .card > *{
+  margin: 20px 0;
+}
+#planning > .container > .row > .col:last-child img{
+  max-width: 250px;
+}
+#planning > .container > .row > .col:last-child h4{
+  font-size: 22px;
+}
+#planning .download i{
+  background-color: rgb(151, 146, 228);
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+}
+
+
 
 
 /*** Section testimonials ***/
