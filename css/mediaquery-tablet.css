@@ -13,6 +13,16 @@
     #demo-app .col.first .col{
         width: 100%;
     }
+    #demo-app .col.first .col:last-child .card{
+        justify-content: left;
+    }
+    
+    #demo-app .col.first img{
+        position: relative;  
+    }
+    #demo-app .col .card h4{
+        font-size: 20px; 
+    }
 
 
     /*** Section planning ***/
@@ -21,11 +31,30 @@
     }
 
 
+    /*** Section testimonials ***/
+    #testimonials .testimonials-foto > div{
+        height: 150px;
+        width: 150px;
+    }
+
+
 
     /*** Section benefits ***/
 
     #benefits .col{
         width: 50%;
+    }
+
+
+    
+    /*** Section about-us ***/
+
+    #about-us .col-right .about-foto{
+        height: 180px;
+        width: 180px;
+    }
+    #about-us .col-right .foto-container .quote-left{
+        font-size: 56px;
     }
 
 }
