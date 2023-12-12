@@ -57,6 +57,10 @@
     .card{
         min-width: 280px;
     }
-
-   
+    section:nth-last-of-type(odd){
+        min-width: 310px;
+    }
+    #footer{
+        min-width: 310px;
+    }
 }
