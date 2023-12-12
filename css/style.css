@@ -355,6 +355,7 @@ text-align: center; font-size: 3rem;
 
 /*** Section benefits ***/
 
+/*** Section benefits Generic***/
 #benefits .col{
   width: calc(100% /3);
   /*debug*/
@@ -362,10 +363,47 @@ text-align: center; font-size: 3rem;
   border: 1px solid black;
 }
 #benefits .col .container{
-  border: 1px dashed black;
   height: 100%;
+}
+#benefits h2{
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  font-size: 42px;
+}
+#benefits .card > *{
+  margin-bottom: 20px;
 
 }
+#benefits .card{
+  padding: 40px 20px;
+  background-color: white;
+  color: rgb(151, 146, 228);
+}
+#benefits .card p{
+  color: rgb(35, 35, 35);
+  line-height: 30px;
+}
+#benefits .card .nmb-card{
+  font-size: 78px;
+  font-weight: 600;
+}
+#benefits .card h3{
+  font-size: 24px;
+}
+#benefits .more a{
+  color: white;
+  background-color: rgb(151, 146, 228) ;
+  padding: 10px 40px;
+  border-radius: 20px;
+}
+
+
+
+
+
+
 
 /*** Section about-us ***/
 
