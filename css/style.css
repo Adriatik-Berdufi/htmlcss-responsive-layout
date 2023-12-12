@@ -67,10 +67,8 @@ li {
   width: 100%;
   border-radius: 25px;
   /*debug*/
-  min-height: 300px;
+  min-height: 100px;
   border: 1px dashed black;
-  
-
 }
 
 
@@ -292,6 +290,7 @@ position: relative;
 }
 
 /*** Section testimonials  first col***/
+
 #testimonials .col.description .card{
   background-color: white;
 }
@@ -402,20 +401,71 @@ text-align: center; font-size: 3rem;
 
 
 
-
-
-
 /*** Section about-us ***/
 
 
+/*** Section about-us col-left ***/
 
 #about-us .col-left{
-  width:60%;  
+  width:60%; 
 }
-#about-us .col-right{
-  width:40%;  
+#about-us .col-left .card{
+  padding: 20px;
+}
+#about-us .col-left .card > * {
+  margin: 50px 0;
+  color: rgb(35, 35, 35);
+  line-height: 30px;
+  font-size: 20px;
+} 
+#about-us .col-left .card h2{
+  color: rgb(151, 146, 228);
+  font-size: 60px;
 }
 
+
+/*** Section about-us col-right ***/
+#about-us .col-right{
+  width:40%; 
+  text-align: center;
+}
+#about-us .col-right .card > *{
+  padding: 20px ;
+}
+#about-us .col-right .about-foto{
+  max-height: 240px;
+  max-width: 240px;
+  border-radius: 50%;
+  line-height: 200px;
+  overflow: hidden;
+  background-color:rgb(183, 170, 170);
+  text-align: center; font-size: 3rem;
+  
+}
+#about-us .col-right .foto-container{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  position: relative;
+}
+#about-us .col-right .foto-container .quote-left{
+  position: absolute;
+  top: 8%;
+  right: 15%;
+  font-size: 86px;
+  color: rgb(151, 146, 228);
+}
+#about-us .col-right p{
+  color: rgb(151, 146, 228);
+  font-size: 32px;
+}
+#about-us .col-right .linkedin span{
+  padding: 10px 20px;
+  border-radius: 20px;
+  color:white ;
+  background-color: rgb(151, 146, 228);
+
+}
 
 
 
