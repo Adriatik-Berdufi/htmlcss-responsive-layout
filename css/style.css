@@ -65,17 +65,19 @@ li {
 .card{
   
   width: 100%;
+  border-radius: 25px;
   /*debug*/
   min-height: 300px;
   border: 1px dashed black;
+  
 
 }
 
 
 /** Debug **/
 section{
-  padding:50px 0;
-  min-height: calc(100vh - var(--header-height))
+  padding: 50px 0;
+  min-height: calc(100vh - var(--header-height));
 
 }
 
@@ -122,11 +124,17 @@ section{
 
 /** MAIN **/
 
+/** main generic **/
+section:nth-last-of-type(odd){
+  background-color: rgb(151, 146, 228);
+}
 
 /*** Section demo-app ***/
-#demo-app{
-  background-color: rgb(153, 137, 137);
+#demo-app .col .card{
+  background-color: rgb(181, 221, 255);
+
 }
+
 #demo-app .col.first{
   width: calc(100% / 3*2 );
 }
@@ -138,14 +146,56 @@ section{
 #demo-app .col .card{
   height: 100%;
 }
-
 #demo-app .col.first .col{
   width: 50%;
-  
-  /*debug*/
-  border: 1px solid red;
-
 }
+/**Section demo-app card style **/
+#demo-app .col:last-child .card{
+display: flex;
+justify-content: center;
+position: relative;
+}
+#demo-app .col.first img{
+  position: absolute;
+  bottom: -56px;
+  width: 280px; 
+}
+#demo-app .card:last-child > *{
+  padding: 20px 5px;
+  color: rgb(35, 35, 35);
+  line-height: 30px;
+}
+#demo-app .col:first-child .card{
+  text-align: left;
+}
+#demo-app .col:first-child .card h4{
+  font-size: 24px;
+  color: rgb(53, 132, 253);
+}
+#demo-app .col .card{
+  text-align: center;
+}
+#demo-app .col .card h4{
+  font-size: 24px;
+  color: rgb(53, 132, 253);
+}
+#demo-app .col .card h3 i{
+  font-size: 80px;
+  color: rgb(53, 132, 253);
+}
+#demo-app .col .card li{
+  color: rgb(255, 255, 255);
+  background-color: rgb(53, 132, 253);
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 20px; 
+}
+#demo-app .col .card li  a > * {
+  margin-left: 10px;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
 
 
 /*** Section planning ***/
@@ -167,9 +217,7 @@ section{
 
 
 /*** Section testimonials ***/
-#testimonials{
-  background-color: rgb(161, 190, 190);
-}
+
 #testimonials .row{
   flex-direction: column;
 }
@@ -207,9 +255,7 @@ section{
 
 /*** Section about-us ***/
 
-#about-us{
-  background-color: rgb(170, 170, 215);
-}
+
 
 #about-us .col-left{
   width:60%;  
@@ -226,7 +272,7 @@ section{
 /** FOOTER **/
 #footer {
   min-height: var(--footer-height);
-  background-color: goldenrod;
+  background-color: rgb(51, 51, 51);
 }
 #footer .container{
  height: var(--footer-height);
