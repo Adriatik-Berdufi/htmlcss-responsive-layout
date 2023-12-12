@@ -56,5 +56,7 @@
     #about-us .col-right .foto-container .quote-left{
         font-size: 56px;
     }
-
+    #about-us .col-right .card .linkedin{
+        padding: 0;
+    }
 }

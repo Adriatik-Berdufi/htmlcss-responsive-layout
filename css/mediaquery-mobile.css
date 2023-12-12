@@ -60,6 +60,11 @@
     section:nth-last-of-type(odd){
         min-width: 310px;
     }
+    #about-us .col-right .foto-container .quote-left {
+        right: 30%;
+    }
+
+    /** Footer **/
     #footer{
         min-width: 310px;
     }
