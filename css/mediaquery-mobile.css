@@ -63,4 +63,7 @@
     #footer{
         min-width: 310px;
     }
+    #footer .container{
+        padding-top: 20px;
+    }
 }
